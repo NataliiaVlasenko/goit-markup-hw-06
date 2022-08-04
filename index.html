@@ -460,7 +460,7 @@
           <h2 class="footer-connect">Подпишитесь на рассылку</h2>
           <div class="subscr-pair">
             <input type="text" name="e-mail" class="subscr-input" placeholder="E-mail">
-            <button type="button" class="button send-email">Подписаться
+            <button type="submit" class="button send-email">Подписаться
               <svg class="social-icon" width="24" height="24">
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
@@ -473,14 +473,58 @@
       </div>
     </footer>
 
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop" data-modal>
 <div class="modal">
 <button class="close-btn" type="button" data-modal-close>
       <svg class="close-icon" width="32" height="32">
       <use href="./images/sprite.svg#icon-close"> </use>
       </svg>
 </button>
+<h1 class="form-header">Оставьте свои данные, мы вам перезвоним</h1>
+<form action="/" method="post" class="form">
+  <div class="form-group">
+<label for="name">Имя</label>
 
+<input type="text" id="name">
+<svg class="input-icon" width="18" height="18">
+  <use href="./images/sprite.svg#icon-person-black"> </use>
+  </svg>
+
+</div>
+
+<div class="form-group">
+<label for="phone">Телефон</label>
+  <input type="tel" name="phone" id="phone"/>
+  <svg class="input-icon" width="18" height="18">
+    <use href="./images/sprite.svg#icon-phone-black"> </use>
+    </svg>
+</div>
+
+  <div class="form-group">
+<label for="email"> Почта</label>
+  <input type="email" name="e-mail" id="email"/>
+  <svg class="input-icon" width="18" height="18">
+    <use href="./images/sprite.svg#icon-email-black"> </use>
+    </svg>
+</div>
+
+  <div class="form-group">
+<label for="comment">Комментарий</label>
+  <textarea id="comment" name="comments" rows="5" placeholder="Введите текст"></textarea>
+</div>
+
+<div class="form-acception">
+<input type="checkbox" id="accept"/>
+<label for="accept">Соглашаюсь с рассылкой и принимаю
+  <a>
+    Условия договора
+  </a>
+</label> 
+
+</div>
+
+<button type="submit" class="button">Отправить</button>
+</form>
 
 
 
