@@ -481,7 +481,7 @@
       </svg>
 </button>
 <h1 class="form-header">Оставьте свои данные, мы вам перезвоним</h1>
-<form action="/" method="post" class="form">
+<form action="/" method="post" class="form" autocomplete="off">
   <div class="form-group">
 <label for="name">Имя</label>
 
@@ -513,15 +513,24 @@
   <textarea id="comment" name="comments" rows="5" placeholder="Введите текст"></textarea>
 </div>
 
-<div class="form-acception">
-<input type="checkbox" id="accept"/>
-<label for="accept">Соглашаюсь с рассылкой и принимаю
-  <a>
+
+
+<label class="form-acception" >
+  <input type="checkbox" name="accept" class="accept-check">
+  <!-- <div class="check-icon"> </div> -->
+  <svg class="check-icon" width="16" height="15">
+    <use href="./images/sprite.svg#icon-Vector"> </use>
+    </svg> 
+    <svg class="check-icon hover-icon" width="16" height="15">
+      <use href="./images/sprite.svg#icon-check"> </use>
+      </svg> 
+  Соглашаюсь с рассылкой и принимаю
+  <a href="/">
     Условия договора
   </a>
 </label> 
 
-</div>
+
 
 <button type="submit" class="button">Отправить</button>
 </form>
