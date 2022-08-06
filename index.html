@@ -458,7 +458,7 @@
 
         <div class="footer-subscr">
           <h2 class="footer-connect">Подпишитесь на рассылку</h2>
-          <div class="subscr-pair">
+          <form class="subscr-pair">
             <input type="text" name="e-mail" class="subscr-input" placeholder="E-mail">
             <button type="submit" class="button send-email">Подписаться
               <svg class="social-icon" width="24" height="24">
@@ -466,14 +466,14 @@
               </svg>
 
             </button>
-          </div>
+          </form>
 
 
         </div>
       </div>
     </footer>
 
-<div class="backdrop" data-modal>
+<div class="backdrop is-hidden" data-modal>
 <div class="modal">
 <button class="close-btn" type="button" data-modal-close>
       <svg class="close-icon" width="32" height="32">
@@ -518,12 +518,13 @@
 <label class="form-acception" >
   <input type="checkbox" name="accept" class="accept-check">
   <!-- <div class="check-icon"> </div> -->
-  <svg class="check-icon" width="16" height="15">
+  <span class="check-icon"></span>
+  <!-- <svg class="check-icon" width="16" height="15">
     <use href="./images/sprite.svg#icon-Vector"> </use>
-    </svg> 
-    <svg class="check-icon hover-icon" width="16" height="15">
+    </svg>  -->
+    <!-- <svg class="check-icon hover-icon" width="16" height="15">
       <use href="./images/sprite.svg#icon-check"> </use>
-      </svg> 
+      </svg>  -->
   Соглашаюсь с рассылкой и принимаю
   <a href="/">
     Условия договора
